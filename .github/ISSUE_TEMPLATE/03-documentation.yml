@@ -1,0 +1,40 @@
+name: Documentation / 文档反馈
+description: Report unclear, incorrect, or missing documentation. / 反馈文档错误、缺失或不清楚之处。
+title: "[Docs]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help us make the documentation easier to use. Please submit this feedback in the repository that maintains the document.
+        帮助我们改进文档的可用性。请在维护该文档的仓库提交反馈。
+
+        You can answer in English or Chinese. / 可以使用中文或英文填写。
+  - type: input
+    id: location
+    attributes:
+      label: Document location / 文档位置
+      description: Provide a URL or file path and section heading. If the document is missing, say where you expected to find it. / 提供链接或文件路径及章节；如果缺少文档，请说明期望在哪里找到。
+      placeholder: "URL or file path + section / 链接或文件路径 + 章节"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is unclear or incorrect? / 哪些地方不清楚或有误？
+      description: Explain what you were trying to do and where the document did not help. / 说明你想完成的任务，以及文档在哪一步未能提供帮助。
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement / 改进建议
+      description: Optional. Suggest a correction, example, or missing explanation. / 选填。可提供修正文案、示例或需要补充的说明。
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: Relevant version / 相关版本
+      description: Optional. Add the project version, documentation version, or commit SHA. / 选填。填写项目版本、文档版本或提交 SHA。
+    validations:
+      required: false

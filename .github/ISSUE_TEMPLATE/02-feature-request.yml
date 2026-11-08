@@ -1,0 +1,39 @@
+name: Feature request / 功能建议
+description: Describe a use case and a useful improvement. / 描述使用场景与期望改进。
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please search existing issues and describe the real problem behind your suggestion. Submit it in the relevant project's repository.
+        请先搜索已有 Issue，说明建议背后的实际问题，并在相关项目仓库提交。
+
+        You can answer in English or Chinese. / 可以使用中文或英文填写。
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use case and problem / 使用场景与问题
+      description: Who needs this, what are they trying to do, and what gets in the way? / 谁需要这个功能、想完成什么任务、目前遇到什么困难？
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement / 期望改进
+      description: Describe the desired behavior and how it would help. Implementation details are optional. / 描述期望的行为及其价值，不必提供实现方案。
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or workarounds / 替代方案或临时办法
+      description: Optional. What have you tried, and where does it fall short? / 选填。尝试过哪些办法，还有哪些不足？
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Examples or additional context / 示例或补充说明
+      description: Optional. Add examples, references, or sketches that clarify the request. / 选填。可提供示例、参考链接或草图。
+    validations:
+      required: false
